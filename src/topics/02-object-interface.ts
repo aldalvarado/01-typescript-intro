@@ -1,18 +1,18 @@
 const skills: string[] = ["Bash", "Counter", "Healing"];
 
-const strider: Character = {
-    name: "Strider",
-    hp: 100,
-    skills: ["Bash", "Counter"],
-}
+// const strider: Character = {
+ //   name: "Strider",
+ //   hp: 100,
+ //   skills: ["Bash", "Counter"],
+// }
 
-interface Character {
-    name: String;
-    hp: Number;
-    skills: String[];
-    hometown?: String;
-}
+//interface Character {
+ //   name: string;
+ //   hp: number;
+ //   skills: string[];
+ //   hometown?: string;
+//}
 
-strider.hometown = "Rivendell";
+//strider.hometown = "Rivendell";
 
-console.table(strider);
+//console.table(strider);
