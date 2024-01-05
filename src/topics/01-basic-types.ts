@@ -1,13 +1,13 @@
 
 
-const name = "Strider";
-let hpPoints: number | "FULL" = 95;
-const IsAlive: boolean = true;
+//const name = "Strider";
+//let hpPoints: number | "FULL" = 95;
+//const IsAlive: boolean = true;
 
-hpPoints = "FULL"
+//hpPoints = "FULL"
 
-console.log({
-    name, hpPoints, IsAlive
-})
+//console.log({
+  //  name, hpPoints, IsAlive
+//})
 
-export{};
+//export{};
