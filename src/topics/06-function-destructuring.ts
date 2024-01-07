@@ -24,16 +24,16 @@ interface TaxCalculatorOptions {
 
 function TaxCalculator(options: TaxCalculatorOptions): number[] {
     let total = 0;
-    options.Products.forEach(Product => {
-        total += Product.Price;
+    options.Products.forEach(({ Price }) => {
+        total += Price;
     });
     return [total, total*options.Tax];
 }
 
-const Result = TaxCalculator({
+const [Total, tax] = TaxCalculator({
     Tax,
     Products: ShoppingCart,
 })
 
-console.log ("Total ", Result[0]);
-console.log ("Tax ", Result[1]);
+console.log ("Total ", Total);
+console.log ("Tax ", tax);
