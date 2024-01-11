@@ -1,31 +1,31 @@
-function classDecorator<T extends { new (...args: any[]): {} }>(
-    constructor: T
-    ) {
-        return class extends constructor {
-            newProperty = "New Property";
-            hello = "override";
-        }
-    }
+// function classDecorator<T extends { new (...args: any[]): {} }>(
+//     constructor: T
+//     ) {
+//         return class extends constructor {
+//             newProperty = "New Property";
+//             hello = "override";
+//         }
+//     }
 
 
 
-@classDecorator
-export class superClass {
+// @classDecorator
+// export class superClass {
 
 
-    public myProperty: string = "Abc123";
+//     public myProperty: string = "Abc123";
 
-    print() {
-        console.log("Hola Mundo")
-    }
-}
+//     print() {
+//         console.log("Hola Mundo")
+//     }
+// }
 
-export function WhatsMyType<T>(argument: T): T{
-    return argument;
-}
+// export function WhatsMyType<T>(argument: T): T{
+//     return argument;
+// }
 
-console.log(superClass);
+// console.log(superClass);
 
-const myClass = new superClass();
+// const myClass = new superClass();
 
-console.log(myClass);
+// console.log(myClass);
